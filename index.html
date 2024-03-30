@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Friends Information</h1>
+    </header>
+    <div class="container">
+        <div id="friendInfo">
+            <button onclick="generateFriends()">Generate Friends</button>
+        </div>
+
+        <div id="functionSelection">
+            <label for="functionSelect">Select Function:</label>
+            <select id="functionSelect" onchange="displayResults()">
+                <option value="totalAge">Calculate Total Age</option>
+                <option value="averageAge">Calculate Average Age</option>
+                <option value="youngestFriend">Find Youngest Friend</option>
+                <option value="oldestFriend">Find Oldest Friend</option>
+            </select>
+            <button onclick="resetPage()">Reset</button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
